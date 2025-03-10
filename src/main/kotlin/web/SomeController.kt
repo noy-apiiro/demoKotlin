@@ -3,7 +3,8 @@ package web
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import util.Application
-import util.Constants.Companion.BLABLA_BASE
+import util.Constants.Companion
+//import util.Constants.Companion.BLABLA_BASE
 import util.Constants.Companion.SECONDS_BASE
 import util.Constants2
 import util.Constants2.MyObject
@@ -37,11 +38,17 @@ class SomeController {
         @PathVariable("id") userId: Int,
     ):  String = "Deleted user: $userId"
 
-    @DeleteMapping(BLABLA_BASE)
+    @DeleteMapping(Companion.BLABLA_BASE)
     @ResponseStatus(HttpStatus.OK)
-    fun blablaUser(
+    fun blablaUser22(
         @PathVariable("id") userId: Int,
     ):  String = "Deleted user: $userId"
+
+//    @DeleteMapping(BLABLA_BASE)
+//    @ResponseStatus(HttpStatus.OK)
+//    fun blablaUser(
+//        @PathVariable("id") userId: Int,
+//    ):  String = "Deleted user: $userId"
 
     @DeleteMapping(SECONDS_BASE)
     @ResponseStatus(HttpStatus.OK)

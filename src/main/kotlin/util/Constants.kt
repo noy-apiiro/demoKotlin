@@ -7,7 +7,6 @@ class Constants {
         const val BLABLA_BASE = "/aws/api/v1/"
         const val SECONDS_BASE = "/gitgit/api/v1/"
     }
-
 }
 
 class Constants2 {
@@ -17,5 +16,4 @@ class Constants2 {
         const val HELLO = "/hello/v1/"
         const val WORLD = "/world/v1/"
     }
-
 }
