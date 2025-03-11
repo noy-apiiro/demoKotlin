@@ -9,7 +9,6 @@ import util.Constants.Companion.SECONDS_BASE
 import util.Constants2
 import util.Constants2.MyObject
 import util.Routes
-import org.springframework.http.MediaType
 
 @RestController
 @RequestMapping
@@ -33,7 +32,7 @@ class SomeController {
         @PathVariable("id") userId: Int,
     ):  String = "Deleted user: $userId"
 
-    @DeleteMapping(MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    @DeleteMapping(Application.INTERNAL_BASE)
     @ResponseStatus(HttpStatus.OK)
     fun deleteInternalUser(
         @PathVariable("id") userId: Int,
